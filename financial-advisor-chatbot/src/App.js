@@ -1,16 +1,13 @@
-import "./App.css";
+import HomePage from "./components/HomePage";
+import InputField from "./components/InputField";
 
-function MyForm() {
+function App() {
   return (
-    <form>
-      <label>
-        Enter your name:
-        <input type="text" />
-      </label>
-    </form>
+    <div>
+      <HomePage />
+      <InputField />
+    </div>
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
 
 export default App;
