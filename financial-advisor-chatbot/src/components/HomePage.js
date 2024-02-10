@@ -1,17 +1,16 @@
 import React from 'react';
+import image from "./assets/CredditSpotterLogo.png"
+
 
 const HomePage = () => {
   return (
-    <div>
-      <header>
-        <h1>Credit Spotter</h1>
-      </header>
-      <main>
-        <p>Welcome to my simple React home page! This is a basic example of a React project.</p>
-        <img src="https://via.placeholder.com/300" alt="Placeholder" />
-      </main>
-    </div>
+    <div className="fixed w-full h-[215px] flex justify-between items-center px-4 bg-[#091824] text-grey-300">
+      <img src=
+        {image}
+      />
+      </div>
   );
 }
+
 
 export default HomePage;

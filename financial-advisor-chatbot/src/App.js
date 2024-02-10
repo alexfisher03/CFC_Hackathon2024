@@ -1,17 +1,9 @@
-import logo from "./logo.svg";
-import "./App.css";
+import HomePage from "./components/HomePage.jsx"
 
-function MyForm() {
+function App() {
   return (
-    <form>
-      <label>
-        Enter your name:
-        <input type="text" />
-      </label>
-    </form>
+      <HomePage />
   );
 }
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
 
 export default App;
