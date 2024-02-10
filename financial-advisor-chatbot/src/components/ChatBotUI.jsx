@@ -9,14 +9,13 @@ const ChatBotUI = ({ formData }) => {
     )}`;
 
     try {
-      const response = await fetch("https://api.openai.com/v4/completions", {
+      const response = await fetch("http://localhost:5000/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${process.env.REACT_APP_OPENAI_API_KEY}`,
         },
         body: JSON.stringify({
-          model: "text-davinci-003", // Or whichever model you're using
+          model: "gpt-3.5-turbo",
           prompt: prompt,
           temperature: 0.7,
           max_tokens: 150,
@@ -27,6 +26,7 @@ const ChatBotUI = ({ formData }) => {
       });
 
       const data = await response.json();
+      console.log(data);
       return { message: data.choices[0].text.trim() };
     } catch (error) {
       console.error("Error calling the ChatGPT API:", error);

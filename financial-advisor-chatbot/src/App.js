@@ -1,5 +1,5 @@
-import Title from "./components/Title";
-import Parent from "./components/ParentComponent";
+import Title from "./components/Title.jsx";
+import Parent from "./components/ParentComponent.jsx";
 
 function App() {
   return (
