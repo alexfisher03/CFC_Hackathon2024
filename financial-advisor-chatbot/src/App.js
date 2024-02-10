@@ -1,8 +1,17 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-function App() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
 }
+function MyForm() {
+  return (
+    <form>
+      <label>Enter your name:
+        <input type="text" />
+      </label>
+    </form>
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
 
 export default App;
