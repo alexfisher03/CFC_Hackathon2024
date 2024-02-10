@@ -3,14 +3,18 @@ import image from "../assets/CredditSpotterLogo.png";
 
 const Title = () => {
   return (
-    <body>
+    <div>
       <div className="fixed w-full h-[150px] flex justify-around items-center px-4 bg-[#091824] text-grey-300">
         <div>
           <a href="http://localhost:3000/">
-            <img class="hover:scale-110 duration-300" src={image} style={{ width: "400px" }} />
+            <img
+              class="hover:scale-110 duration-300"
+              src={image}
+              style={{ width: "400px" }}
+            />
           </a>
         </div>
-        <p className="text-left md:text-center">
+        <div className="text-left md:text-center">
           <h1 class="text-white">Created by:</h1>
           <div class="name_credit">
             <ul className="text-lg font-bold">
@@ -52,10 +56,10 @@ const Title = () => {
               </li>
             </ul>
           </div>
-        </p>
+        </div>
       </div>
       <div className="h-[150px]"></div>
-    </body>
+    </div>
   );
 };
 
