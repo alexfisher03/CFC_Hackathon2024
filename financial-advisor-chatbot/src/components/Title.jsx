@@ -1,7 +1,7 @@
 import React from "react";
 import image from "../assets/CredditSpotterLogo.png";
 
-const HomePage = () => {
+const Title = () => {
   return (
     <body>
       <div className="fixed w-full h-[150px] flex justify-around items-center px-4 bg-[#091824] text-grey-300">
@@ -55,4 +55,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Title;

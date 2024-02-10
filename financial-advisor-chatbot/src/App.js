@@ -1,11 +1,11 @@
-import HomePage from "./components/HomePage";
-import InputField from "./components/InputField";
+import Title from "./components/Title";
+import Parent from "./components/ParentComponent";
 
 function App() {
   return (
     <div>
-      <HomePage />
-      <InputField />
+      <Title />
+      <Parent />
     </div>
   );
 }

@@ -1,11 +1,18 @@
 import React from "react";
 
-export default function InputField() {
+export default function InputField({ setFormData, setShowChatBot }) {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const formProps = Object.fromEntries(formData);
+    setFormData(formProps);
+    setShowChatBot(true);
+  };
   return (
     <div class="w-full fixed h-screen bg-[#091824]">
       {/*container*/}
       <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-[-150px] pt-10">
-        <form>
+        <form onSubmit={handleSubmit}>
           <div class="grid gap-6 mb-6 md:grid-cols-2">
             <div>
               <label
@@ -102,6 +109,7 @@ export default function InputField() {
               <a
                 href="#"
                 class="text-blue-600 hover:underline dark:text-blue-500"
+                required
               >
                 terms and conditions
               </a>
