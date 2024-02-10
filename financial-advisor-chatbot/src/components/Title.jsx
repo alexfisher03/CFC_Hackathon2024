@@ -5,7 +5,11 @@ const Title = () => {
   return (
     <body>
       <div className="fixed w-full h-[150px] flex justify-around items-center px-4 bg-[#091824] text-grey-300">
-        <img src={image} style={{ width: "400px" }} />
+        <div>
+          <a href="http://localhost:3000/">
+            <img class="hover:scale-110 duration-300" src={image} style={{ width: "400px" }} />
+          </a>
+        </div>
         <p className="text-left md:text-center">
           <h1 class="text-white">Created by:</h1>
           <div class="name_credit">
