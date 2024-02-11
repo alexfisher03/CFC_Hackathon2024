@@ -15,12 +15,12 @@ const Title = () => {
           </a>
         </div>
         <div className="text-left md:text-center">
-          <h1 class="text-white">Created by:</h1>
+          <h1 class="text-slate-400">Created by:</h1>
           <div class="name_credit">
             <ul className="text-lg font-bold">
               <li>
                 <a
-                  class="text-white hover:underline"
+                  class="text-slate-500 hover:text-white duration-300"
                   href="https://github.com/alexfisher03"
                   target="_blank"
                 >
@@ -29,7 +29,7 @@ const Title = () => {
               </li>
               <li>
                 <a
-                  class="text-white hover:underline "
+                  class="text-slate-500 hover:text-white duration-300"
                   href="https://github.com/Maykur"
                   target="_blank"
                 >
@@ -38,7 +38,7 @@ const Title = () => {
               </li>
               <li>
                 <a
-                  class="text-white hover:underline"
+                  class="text-slate-500 hover:text-white duration-300"
                   href="https://github.com/Leo-Graham"
                   target="_blank"
                 >
@@ -47,7 +47,7 @@ const Title = () => {
               </li>
               <li>
                 <a
-                  class="text-white hover:underline"
+                  class="text-slate-500 hover:text-white duration-300"
                   href="https://github.com/j-frankel"
                   target="_blank"
                 >
