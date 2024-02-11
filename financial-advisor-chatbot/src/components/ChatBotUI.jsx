@@ -27,7 +27,17 @@ const ChatBotUI = ({ formData }) => {
 
       const data = await response.json();
       console.log(data);
-      return { message: data.choices[0].text.trim() };
+
+      // Data structure validation
+      if (data.choices && data.choices.length > 0) {
+        return { message: data.choices[0].text.trim() };
+      } else {
+        // Handle the case where data.choices is not as expected
+        console.error("Unexpected response structure from OpenAI:", data);
+        return {
+          message: "Received an unexpected response structure from OpenAI.",
+        };
+      }
     } catch (error) {
       console.error("Error calling the ChatGPT API:", error);
       return {

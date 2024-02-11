@@ -3,7 +3,7 @@ import express from "express";
 import cors from "cors";
 import fetch from "node-fetch";
 
-dotenv.config({ path: "/secret.env" });
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
@@ -13,6 +13,7 @@ app.use(
     origin: "http://localhost:3000",
   })
 );
+
 // Middleware to parse JSON bodies
 app.use(express.json());
 
@@ -23,7 +24,7 @@ app.get("/", (req, res) => {
 
 // Proxy endpoint for the ChatGPT API
 app.post("/api/chat", async (req, res) => {
-  const response = await fetch("https://api.openai.com/v4/completions", {
+  const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
