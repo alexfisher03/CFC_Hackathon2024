@@ -24,7 +24,7 @@ const Title = () => {
                   href="https://github.com/alexfisher03"
                   target="_blank"
                 >
-                  Alex
+                  Alexander Fisher
                 </a>
               </li>
               <li>
@@ -33,7 +33,7 @@ const Title = () => {
                   href="https://github.com/Maykur"
                   target="_blank"
                 >
-                  Julian
+                  Julian Garcia
                 </a>
               </li>
               <li>
@@ -42,7 +42,7 @@ const Title = () => {
                   href="https://github.com/Leo-Graham"
                   target="_blank"
                 >
-                  Leo
+                  Leo Graham
                 </a>
               </li>
               <li>
@@ -51,7 +51,7 @@ const Title = () => {
                   href="https://github.com/j-frankel"
                   target="_blank"
                 >
-                  Jacob
+                  Jacob Frankel
                 </a>
               </li>
             </ul>
