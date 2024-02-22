@@ -70,9 +70,9 @@ const ChatBotUI = ({ formData }) => {
   };
 
   return (
-    <div className="bg-[#091824] w-full mx-auto fixed">
-      <div className=" bg-[#091824] rounded-lg overflow-hidden pt-13 pb-[200px]">
-        <div className="flex flex-col h-96">
+    <div className="bg-[#091824] w-full mx-auto fixed h-full">
+      <div className=" bg-[#091824] rounded-lg overflow-hidden pt-13 pb-[200px] h-full">
+        <div className="flex flex-col h-full">
           <div className="flex-1 overflow-y-auto p-4 space-y-2">
             {messages.map((msg, index) => (
               <div
